@@ -1,0 +1,352 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* NASTAVENI FONTU */
+body {font-family:'Montserrat', sans-serif;}
+
+
+h1 {font-weight: 500;
+    font-size: 28px;
+    color: black;}
+
+p {font-weight: 300;
+font-size: 16px;
+color: #8b8b8b;}
+
+
+h3 {font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF; text-align: center;
+     justify-content: center;
+    vertical-align: middle;
+margin: 3px;}
+
+h2 {font-weight: 500;
+    font-size: 16px;
+    color: black;}
+
+h4 {font-weight: 300;
+    font-size: 13px;
+    color: #8b8b8b;}
+
+/* HLAVNI OBRAZEK */
+.happy-traveller {width: 100%;}
+.mainphoto {margin-top: 60px;
+    margin-bottom: 40px;}
+
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #407bff;
+    margin: 10px auto 30px auto;}
+
+/* HORNI ODKAZY */
+
+.button1, .button2 {border-radius: 30px;
+    padding: 11px 20px 11px 20px;
+    margin: 20px auto;
+    text-align: center;}
+
+a {color: white;
+    text-decoration: none;}
+
+/* .links {display: flex;
+flex-wrap: wrap;} */
+
+.button1 {background-color:#407bff; 
+    margin-bottom: 10px;
+     width: 220px; }
+
+.button2 {background-color:#8b8b8b; 
+    width: 250px;}
+
+.header, .prvni, .links, .podnadpis1, .odstavec1, .podnadpis2, .odstavec2
+{text-align: center;}
+
+.prvni {margin-bottom: 40px;}
+
+.podnadpis1 {margin-top: 60px; margin-bottom: 15px;}
+.odstavec1 {margin-top: 0; margin-bottom: 30px;}
+.podnadpis2 {margin-top: 60px; margin-bottom: 15px;}
+.odstavec2 {margin-top: 0; margin-bottom: 30px;}
+
+
+/* BUTTONS MENU 1*/
+.buttons1 {display: flex; 
+    /* flex-direction: column;  */
+    justify-content: center;
+align-items: center;
+flex-wrap: wrap;}
+
+.square1, .square2, .square3 {display: flex; 
+    flex: 1 1 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 6px #407BFF1F ;
+margin-right: 20px; margin-left: 20px;
+align-items: center;
+flex: 1 1 100%;} 
+
+.map, .cactus, .plane {padding: 20px;
+     margin-right: 5px; 
+     /* flex: 0 1 15%; */
+    }
+
+/* .h4-1, .h4-2, .h4-3 {display: flex; 
+    align-items: center;
+justify-content: center;
+flex: 1 1 85%;
+padding-right: 10px;} */
+
+
+/* má se dát flex .square1,2 a 3 a flex hodnoty .map, .cactus, .plane a 
+.h4-1., h4-2 ... - pokud zvětšuji obrazovku, rostou i obrázky. Pokud to tam nemám, text není zarobnán do středu a při zvětšení obrazovky zůstává nalevo */
+
+.square1, .square2 {margin-bottom: 15px;}
+
+/* BUTTONS MENU 2*/
+.buttons2 {display: flex; 
+    /* flex-direction: column;  */
+    justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 110px;}
+
+.square4, .square5, .square6 {display: flex; 
+    flex: 1 1 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 6px #407BFF1F ;
+margin-right: 20px; 
+margin-left: 20px;
+align-items: center;
+flex: 1 1 100%;} 
+
+.palm, .umbrella, .rv {padding: 20px; 
+    margin-right: 5px;
+     /* flex: 0 1 15%; */
+    }
+
+    /* .h4-4, .h4-5, .h4-6 {display: flex; 
+        align-items: center;
+    justify-content: center;
+    flex: 1 1 85%;
+    padding-right: 10px;} */
+
+.square4, .square5 {margin-bottom: 15px;}
+
+.button1, .button2:hover {background-color: #265aca; }
+
+/* TABLET */
+@media screen and (min-width: 640px)
+{ .prvni {margin-bottom: 40px; 
+    margin-left: 110px;
+margin-right: 110px;}
+.links {display: flex; flex: 0 0 500px;
+margin-left: 160px;
+justify-content: space-evenly;
+margin-right: 160px;}
+.button1, .button2 {flex-basis: calc(100% / 2);}
+.button1 {
+    /* margin-left: 160px;  */
+    margin-right: 10px; 
+    margin-bottom: auto;
+    max-width: 220px;
+    min-width: 220px;
+ 
+}
+.button2 {
+    /* margin-right: 160px; */
+     margin-left: 10px;
+     max-width: 220px;
+     min-width: 220px;
+
+}
+  
+/* JAK UDELAT, ABY BUTTONY MELY PORAD STEJNOU VELIKOST PRI NATAHOVANI A SMRSTOVANI */
+/* aktualne mam space evenly a mam a min width - ale je to dobre? */
+
+.podnadpis1, .podnadpis2 {margin-top: 60px;}
+
+.buttons1 {display: flex; 
+    /* flex-wrap: wrap;  */
+    margin-left: auto; 
+    margin-right: auto;
+    /* flex: 1 0 550px; */
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.square1, .square2, .square3 {display: block; 
+    flex: 1 1 calc(100% / 3 - 40px);
+    width: 170px;
+align-items: center; justify-content: center;}
+
+.map, .cactus, .plane {margin-top: 40px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 0;
+width: 45px;
+height: 40px;
+display: block;}
+
+h4 {text-align: center; 
+    padding: 0 15px 20px 15px;
+margin-top: 0;}
+.square1 {margin-right: 10px;}
+.square2 {margin-right: 10px;
+     margin-left: 10px;}
+.square3 {margin-left: 10px;}
+.odstavec1, .odstavec2 {text-align: center; 
+    padding-left: 110px; 
+    padding-right: 110px;
+margin-bottom: 40px;}
+
+
+    .buttons2 {display: flex; 
+        order: 1;
+         flex: 0 0 550px;
+        /* flex-wrap: wrap;  */
+        margin-left: auto; 
+        margin-right: auto;
+        max-width: 550px;
+        justify-content: center;
+    align-items: center;}
+    
+    .square4, .square5, .square6 {display: block; 
+        flex: 1 1 calc(100% / 3 - 40px);
+    align-items: center; justify-content: center;}
+    
+    .palm, .umbrella, .rv {margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 45px;
+    height: 40px;
+    display: block;}
+    
+
+    .square4 {margin-right: 10px;}
+    .square5 {margin-right: 10px;
+         margin-left: 10px;}
+    .square6 {margin-left: 10px;}
+
+.square3, .square6 {margin-bottom: 15px;}
+}
+
+
+/* PC */
+/* proc je overflow? */
+@media screen and (min-width: 1100px)
+{
+    body {margin: 0}
+.kontejner {width: 1040px;
+    /* display:inline-block;
+    text-align:center; */
+    /* proc tohle nefunguje a funguje display block? */
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* overflow:hidden;  */
+    /* word-wrap:break-word */
+}
+
+
+/* HORNI */
+.header {display: flex;
+    justify-content: space-between;
+     /* flex-wrap: wrap; */
+     margin-left: 80px;
+    }
+.mainphoto {order:2 ;
+flex: 1 0 calc(1040px / 2 - 60px);
+margin-left: 60px;
+margin-top: 60px;
+margin-bottom: 80px;
+margin-right: 110px;
+width: 490px;
+
+}
+
+.happy-traveler {max-width: 425px;
+/* flex: 1 0 425px; */
+width: 100%;
+}
+
+.leva {order:1;
+     /* flex: 0 0 calc(1040px / 2 - 60px); */
+    margin-right: 30px;
+margin-top: 60px;
+justify-content: start;
+margin-bottom: 80px;
+width: 520px;
+margin-right: 0;
+}
+
+.title, .line, .prvni, .links 
+{justify-content: start;
+text-align: start;
+margin-left: 0px;
+margin-right: 0;}
+
+.button1, .button2 {justify-content: start;
+    text-align: start;
+   }
+    
+.button1 {margin-left: 0;}
+.prvni {margin-right: 0;}
+    
+    /* calc(1040px / 3 - 150px);} */
+
+/* PROSTREDNI */
+.prostredni {display: flex;
+margin-bottom: 80px;
+margin-left: 80px;}
+.sluzbyck {order: 2; flex: 0 0 430px;
+     margin-left: 30px;
+    text-align: start;}
+.buttons1 {order: 1; flex: 0 0 550px;
+margin-left: 0px;
+margin-right: 30px;
+max-width: 550px;}
+
+.square1 {margin-left: 0;}
+.square3 {margin-right: 0;}
+
+.odstavec1 {padding: 0;
+text-align: start;}
+
+.podnadpis1 {text-align: start; 
+    margin-top: 40px;}
+
+/* calc( 100% / 2) */
+
+/* SPODNI */
+.spodni {display: flex;
+margin-left: 80px;
+margin-bottom: 110px;}
+.sluzbydelegatu {order: 1; flex: 0 0 430px;
+    text-align: start;}
+.buttons2 {order: 2; flex: 0 0 550px;
+max-width: 550px;
+margin-left: 60px;}
+
+.square1 {margin-left: 0;}
+.square3 {margin-right: 0;}
+
+.odstavec2 {padding: 0;
+text-align: start;}
+
+.podnadpis2 {text-align: start; 
+    margin-top: 40px;}
+
+    .square4 {margin-left: 0;}
+    .square6 {margin-right: 0;}
+
+}
